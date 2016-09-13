@@ -1,0 +1,157 @@
+/*///////////////////////////////////////////*/
+/*///////////////////////////////////////////*/
+/*                  全 域                    */
+/*///////////////////////////////////////////*/
+/*///////////////////////////////////////////*/
+body{
+  background-color: gray;
+  margin: 0px;
+}
+#Header{
+  width: 100%;
+  background-color: #fff;
+}
+#Header>.Container{
+  width: 100%;
+  background-color: orange;
+  overflow:auto;
+}
+.Container{
+  width: 90%;
+  background-color: green;
+  margin: auto;
+}
+#Taste{
+  background-image: url('../images/bg/bg_02.jpg');
+}
+#MenuIcon{
+  width: 15.6%;
+  height: 88px;
+  background-color: red;
+  float: left;
+}
+.DB{
+  width: 100%;
+  height: 100%;
+  display:block;
+}
+.SrOnly{
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  border: 1px;
+  margin:-1px;
+  clip:rect(0,0,0,0)/*---CSS的遮色片---*/
+}
+#LOGO{
+  width: 35.3%;
+  height: 88px;
+  background-color: purple;
+  float: left;
+  margin-top:0px;
+  margin-bottom:0px;
+}
+#MemberContent{
+  width: 13.6%;
+  height: 88px;
+  background-color: blue;
+  float: right;
+  margin-right:2%;
+}
+#MemberContent>div{
+  float: left;
+  width: 50%;
+  /*min-width:50px;*/
+}
+#MemberIcon{
+  background-color: green;
+  height: 88px;
+}
+#CartIcon{
+  background-color: brown;
+  height: 88px;
+}
+#PrimaryNavigation{
+  width: 100%;
+  background-color: aqua;
+  float: left;
+}
+#PrimaryNavigation>ul{
+  list-style-type:none;
+  margin:0px;
+  padding:0px;
+}
+#PrimaryNavigation>ul>li{
+  width: 100%;
+  height: 60px;
+  background-color: #FD9596;
+  border-bottom: 1px solid #fff;
+  text-align: center;
+  line-height: 60px;
+}
+#PrimaryNavigation>ul>li>a{
+  list-style-type: none;
+  text-decoration: none;
+  color: #fff;
+}
+
+/*///////////////////////////////////////////*/
+/*///////////////////////////////////////////*/
+/*                手機轉置                    */
+/*///////////////////////////////////////////*/
+/*///////////////////////////////////////////*/
+
+@media screen and (min-width: 481px){
+  body{
+    background-color: green;
+  }
+}
+
+/*///////////////////////////////////////////*/
+/*///////////////////////////////////////////*/
+/*                  平板版                   */
+/*///////////////////////////////////////////*/
+/*///////////////////////////////////////////*/
+@media screen and (min-width: 768px){
+  body{
+    background-color: blue;
+  }
+  #Header>.Container{
+    width: 90%;
+  }
+  #News{
+    background-image: url('../images/bg/bg_01.jpg');
+  }
+  #MenuIcon{
+    display: none;
+  }
+  #LOGO{
+    margin-left:39%;
+    width: 22%;
+    height: 29px;
+    margin-top:69px;
+  }
+  #MemberContent{
+    width:80px;
+    height: 40px;
+  }
+  #MemberContent>div{
+    width: 40px;
+    height: 40px;
+  }
+
+}
+
+/*///////////////////////////////////////////*/
+/*///////////////////////////////////////////*/
+/*                  PC 版                    */
+/*///////////////////////////////////////////*/
+/*///////////////////////////////////////////*/
+@media screen and (min-width: 981px){
+  body{
+    background-color: orange;
+  }
+  .Container, #Header>.Container{
+    max-width: 1170px;
+  }
+}
