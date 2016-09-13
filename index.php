@@ -26,6 +26,7 @@
         <li><a href="#" class="DB"><span>最新消息</span></a></li>
         <li><a href="#" class="DB"><span>產品介紹</span></a></li>
         <li><a href="#" class="DB"><span>聯絡我們</span></a></li>
+        <li><a href="#" class="DB"><span>會員註冊</span></a></li>
       </ul>
     </nav>
   </div>
